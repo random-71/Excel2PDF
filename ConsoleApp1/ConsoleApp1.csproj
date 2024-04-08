@@ -89,8 +89,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Aspose.PDF.NET.lic" />
-    <None Include="Aspose.Total.NET.lic" />
     <None Include="packages.config" />
     <None Include="PoS Support.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
