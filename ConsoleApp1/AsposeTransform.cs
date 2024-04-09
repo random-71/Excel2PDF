@@ -12,7 +12,7 @@ namespace ConsoleApp1.AsposePdf
             try
             {
                 Aspose.Cells.License license = new Aspose.Cells.License();
-                license.SetLicense(@"C:\Users\SE86826\OneDrive - Repsol\Documents\04 - Requerimientos\3161\Aspose.Total.NET.lic");
+                license.SetLicense(@"C:\Aspose.Total.NET.lic");
 
                 using (Stream data = new FileStream("PoS Support.xlsx", FileMode.Open, FileAccess.Read))
                 {
@@ -22,7 +22,7 @@ namespace ConsoleApp1.AsposePdf
                     using (MemoryStream dstStream = new MemoryStream())
                     {
                         var s = new Workbook(data);
-                        s.Save(@"C:\Users\SE86826\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\kk.pdf");
+                        s.Save(@"kk.pdf");
                         s.Save(dstStream, SaveFormat.Pdf);
                         return dstStream.ToArray();
                     } 
